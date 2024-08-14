@@ -24,4 +24,4 @@ jobs:
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
         with:
           api-key: 7d8fcec4-7dea-4958-b31d-d116fd28fcbe
-          app-file: androidfood.apk
+          app-file: qafood.apk
