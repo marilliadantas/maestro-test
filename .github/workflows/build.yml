@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 14
 
-      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
+      - uses: mobile-dev-inc/action-maestro-cloud@v1.8.1
         with:
           api-key: 32e00590-435d-469e-90b2-15806898c0cc
           app-file: qafood.apk
