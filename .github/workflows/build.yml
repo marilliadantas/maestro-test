@@ -21,7 +21,5 @@ jobs:
         with:
           node-version: 14
 
-      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
-        with:
-          api-key: 32e00590-435d-469e-90b2-15806898c0cc
-          app-file: qafood.apk
+      - name: Run Maestro tests
+        run: maestro --host 192.168.1.71 test .maestro/android-flow.yaml --app-file qafood.apk
