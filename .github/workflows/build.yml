@@ -22,4 +22,4 @@ jobs:
           node-version: 14
 
       - name: Run Maestro tests
-        run: maestro --host 192.168.1.71 test .maestro/android-flow.yaml --app-file qafood.apk
+        run: maestro test .maestro/android-flow.yaml --app-file qafood.apk
