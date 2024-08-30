@@ -5,9 +5,9 @@ on:
     branches:
       - main
   workflow_dispatch:
-  schedule:
-    - cron: '10 14 * * *'
-    - cron: '20 14 * * *'
+  # schedule:
+  #   - cron: '10 14 * * *'
+  #   - cron: '20 14 * * *'
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 20
 
-      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
+      - uses: mobile-dev-inc/action-maestro-cloud@v1.2.0
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: qafood.apk
